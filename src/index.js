@@ -19,7 +19,7 @@
 	  wx.removeStorage({key: 'etcode'});
 	};
 
-	CxTkapi.prototype.getLink = function(itemId, getLinkCallback) {
+	CxTkapi.prototype.getLink = function(goodsLink, getLinkCallback) {
 	  var that = this, referer = this.referer, pid=this.pid, etProxy=this.etProxy;
 
 	  function getAmvid(cb) {
@@ -77,7 +77,7 @@
 	    link += '&rf=' + encodeURIComponent(referer);
 	    link += '&rd=2&et=' + etcode;
 	    link += '&pgid=' + pgid;
-	    link += '&ct=' + encodeURIComponent('url=' + encodeURIComponent('http://detail.tmall.com/item.htm?id=' + itemId));
+	    link += '&ct=' + encodeURIComponent('url=' + encodeURIComponent(goodsLink));
 	    link += '&v=1.2&ttype=2&cm=&ck=-1&cw=0';
 	    if (typeof getLinkCallback === 'function') {
 	      getLinkCallback(link);
