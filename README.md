@@ -1,4 +1,4 @@
-# utf16toEntities
+# CxTkapi
 微信小程序版淘点金api对接模块
 ```java
 var CxTkapi = require('./src/index.js');
