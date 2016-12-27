@@ -1,0 +1,24 @@
+{
+  "name": "cxtkapi",
+  "version": "0.1.1",
+  "description": "微信小程序版淘点金api对接模块",
+  "main": "dist/index.js",
+  "scripts": {
+    "dist": "gulp dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilien/cxtkapi.git"
+  },
+  "author": "Vilien",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vilien/cxtkapi/issues"
+  },
+  "homepage": "https://github.com/vilien/cxtkapi#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
